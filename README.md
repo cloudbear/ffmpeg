@@ -5,19 +5,9 @@ Current FFmpeg version: `5.1.2`
 ## FFmpeg Build Configuration
 
 ```sh
-ffmpeg version 3.0 Copyright (c) 2000-2016 the FFmpeg developers
-  built with gcc 5.3.0 (Alpine 5.3.0)
-  configuration: --enable-version3 --enable-gpl --enable-nonfree --enable-small --enable-libmp3lame --enable-libx264 --enable-libx265 --enable-libvpx --enable-libtheora --enable-libvorbis --enable-libopus --enable-libass --enable-libwebp --enable-librtmp --enable-postproc --enable-libfreetype --enable-openssl --disable-debug
-  libavutil      55. 17.103 / 55. 17.103
-  libavcodec     57. 24.102 / 57. 24.102
-  libavformat    57. 25.100 / 57. 25.100
-  libavdevice    57.  0.101 / 57.  0.101
-  libavfilter     6. 31.100 /  6. 31.100
-  libswscale      4.  0.100 /  4.  0.100
-  libswresample   2.  0.101 /  2.  0.101
-  libpostproc    54.  0.100 / 54.  0.100
-
-  configuration:
+ffmpeg version 5.1.2 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 12.2.1 (Alpine 12.2.1_git20220924-r4) 20220924
+  configuration: 
     --enable-version3
     --enable-gpl
     --enable-nonfree
@@ -36,6 +26,14 @@ ffmpeg version 3.0 Copyright (c) 2000-2016 the FFmpeg developers
     --enable-libfreetype
     --enable-openssl
     --disable-debug
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
 ```
 
 ## Usage
