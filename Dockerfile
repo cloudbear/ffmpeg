@@ -1,5 +1,4 @@
 FROM alpine:latest
-MAINTAINER Bruno Celeste <bruno@coconut.co>
 
 ENV FFMPEG_VERSION=5.1.2
 
