@@ -70,11 +70,9 @@ ffmpeg -buildconf
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-## Author
+## Original Author
 
-**Bruno Celeste**
-
-http://coconut.co
+**Bruno Celeste** [http://coconut.co](http://coconut.co)
 
 [@OpenCoconut](http://twitter.com/OpenCoconut)
 
