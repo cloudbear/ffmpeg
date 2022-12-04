@@ -6,7 +6,7 @@ Current FFmpeg version: `5.1.2`
 
 ## FFmpeg Build Configuration
 
-```
+```sh
 ffmpeg version 3.0 Copyright (c) 2000-2016 the FFmpeg developers
   built with gcc 5.3.0 (Alpine 5.3.0)
   configuration: --enable-version3 --enable-gpl --enable-nonfree --enable-small --enable-libmp3lame --enable-libx264 --enable-libx265 --enable-libvpx --enable-libtheora --enable-libvorbis --enable-libopus --enable-libass --enable-libwebp --enable-librtmp --enable-postproc --enable-libfreetype --enable-openssl --disable-debug
@@ -42,28 +42,28 @@ ffmpeg version 3.0 Copyright (c) 2000-2016 the FFmpeg developers
 
 ## Usage
 
-```
-$ docker run opencoconut/ffmpeg -i http://files.coconut.co.s3.amazonaws.com/test.mp4 -f webm -c:v libvpx -c:a libvorbis - > test.webm
+```sh
+docker run opencoconut/ffmpeg -i http://files.coconut.co.s3.amazonaws.com/test.mp4 -f webm -c:v libvpx -c:a libvorbis - > test.webm
 ```
 
 To encode a local file, you can mount the current path on the Docker host's filesystem as a volume inside the container like this:
 
-```
-$ docker run -v=`pwd`:/tmp/ffmpeg opencoconut/ffmpeg -i localfile.mp4 out.webm
+```sh
+docker run -v=`pwd`:/tmp/ffmpeg opencoconut/ffmpeg -i localfile.mp4 out.webm
 ```
 
 You can create an alias so you use the Docker container like if FFmpeg is installed on your computer:
 
 In `~/.bashrc`:
 
-```
+```sh
 alias ffmpeg='docker run -v=`pwd`:/tmp/ffmpeg opencoconut/ffmpeg'
 ```
 
 Now we can execute FFmpeg with just:
 
-```
-$ ffmpeg -buildconf
+```sh
+ffmpeg -buildconf
 ```
 
 ## Contributing
